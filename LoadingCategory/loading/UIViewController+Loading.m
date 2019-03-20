@@ -22,9 +22,6 @@
 ///gif布局高度
 #define gif_height           reallySize(200)
 
-#define error_view_width     reallySize(200)
-#define error_view_height    reallySize(200)
-
 ///错误图片宽度
 #define error_image_width    reallySize(200)
 ///错误图片高度
