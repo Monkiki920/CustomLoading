@@ -13,6 +13,8 @@
 		9C87CFBA224226F000C3E570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C87CFB9224226F000C3E570 /* Assets.xcassets */; };
 		9C87CFBD224226F000C3E570 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C87CFBB224226F000C3E570 /* LaunchScreen.storyboard */; };
 		9C87CFC0224226F000C3E570 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C87CFBF224226F000C3E570 /* main.m */; };
+		9C87CFCA2242271C00C3E570 /* UIViewController+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C87CFC82242271C00C3E570 /* UIViewController+Loading.m */; };
+		9C87CFCB2242271C00C3E570 /* icon_loading_gif.GIF in Resources */ = {isa = PBXBuildFile; fileRef = 9C87CFC92242271C00C3E570 /* icon_loading_gif.GIF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		9C87CFBC224226F000C3E570 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C87CFBE224226F000C3E570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C87CFBF224226F000C3E570 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C87CFC72242271C00C3E570 /* UIViewController+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Loading.h"; sourceTree = "<group>"; };
+		9C87CFC82242271C00C3E570 /* UIViewController+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Loading.m"; sourceTree = "<group>"; };
+		9C87CFC92242271C00C3E570 /* icon_loading_gif.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = icon_loading_gif.GIF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		9C87CFAF224226EE00C3E570 /* LoadingCategory */ = {
 			isa = PBXGroup;
 			children = (
+				9C87CFC62242271000C3E570 /* loading */,
 				9C87CFB0224226EE00C3E570 /* AppDelegate.h */,
 				9C87CFB1224226EE00C3E570 /* AppDelegate.m */,
 				9C87CFB3224226EE00C3E570 /* ViewController.h */,
@@ -69,6 +75,16 @@
 				9C87CFBF224226F000C3E570 /* main.m */,
 			);
 			path = LoadingCategory;
+			sourceTree = "<group>";
+		};
+		9C87CFC62242271000C3E570 /* loading */ = {
+			isa = PBXGroup;
+			children = (
+				9C87CFC92242271C00C3E570 /* icon_loading_gif.GIF */,
+				9C87CFC72242271C00C3E570 /* UIViewController+Loading.h */,
+				9C87CFC82242271C00C3E570 /* UIViewController+Loading.m */,
+			);
+			path = loading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +147,7 @@
 				9C87CFBD224226F000C3E570 /* LaunchScreen.storyboard in Resources */,
 				9C87CFBA224226F000C3E570 /* Assets.xcassets in Resources */,
 				9C87CFB8224226EE00C3E570 /* Main.storyboard in Resources */,
+				9C87CFCB2242271C00C3E570 /* icon_loading_gif.GIF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +161,7 @@
 				9C87CFB5224226EE00C3E570 /* ViewController.m in Sources */,
 				9C87CFC0224226F000C3E570 /* main.m in Sources */,
 				9C87CFB2224226EE00C3E570 /* AppDelegate.m in Sources */,
+				9C87CFCA2242271C00C3E570 /* UIViewController+Loading.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +306,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8PE326GLF;
 				INFOPLIST_FILE = LoadingCategory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8PE326GLF;
 				INFOPLIST_FILE = LoadingCategory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
