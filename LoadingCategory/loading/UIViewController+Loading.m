@@ -44,7 +44,7 @@
 + (void)load {
     Method method1 = class_getInstanceMethod([self class], @selector(custom_viewDidLoad));
     Method method2 = class_getInstanceMethod([self class], @selector(viewDidLoad));
-    if (!class_addMethod([UILabel class], @selector(awakeFromNib), method_getImplementation(method1), method_getTypeEncoding(method2))) {
+    if (!class_addMethod([UIViewController class], @selector(viewDidLoad), method_getImplementation(method1), method_getTypeEncoding(method2))) {
         method_exchangeImplementations(method1, method2);
     } else {
         class_replaceMethod(self, @selector(custom_viewDidLoad), method_getImplementation(method2), method_getTypeEncoding(method2));
